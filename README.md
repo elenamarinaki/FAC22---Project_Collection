@@ -1,4 +1,10 @@
-# This is my Project Collection for FAC22!! Welcome :)
+# This is my Project Collection for FAC22!!
 
-![welcome](https://giphy.com/gifs/hello-welcome-bienvenido-LqIlvdZAQt1DNStJGb/embed)
+![welcome](https://media.giphy.com/media/LqIlvdZAQt1DNStJGb/giphy.gif)
+
+
+*In this repository I will be adding new material I am learning every week with @foundersandcoders :)*
+
+## Week 1
+* Semantic HTML
 
