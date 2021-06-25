@@ -109,6 +109,12 @@ html {
 
   }
 
+  a {
+      text-decoration: none;
+      color: #023047;
+      font-family: 'Montserrat', sans-serif;
+  }
+
   .container {
       width: 80%;
       margin: auto;
