@@ -1,4 +1,4 @@
 # This is my Project Collection for FAC22!! Welcome :)
 
-## This is me => ![image of me - rhuave](./rhuave_small.png)
+![welcome](https://giphy.com/gifs/hello-welcome-bienvenido-LqIlvdZAQt1DNStJGb/embed)
 
