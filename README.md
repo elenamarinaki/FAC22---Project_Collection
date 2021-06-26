@@ -7,4 +7,5 @@
 
 ## Week 1
 * Semantic HTML
+* JavaScript Drum Kit
 
