@@ -125,9 +125,6 @@ html {
       margin: auto;
       margin-top: 10px;
 
-      background-color: #FB8500;
-      border-radius: 8px;
-
       color: #023047;
       font-family: 'Montserrat', sans-serif;
 
@@ -135,6 +132,23 @@ html {
 
   .container ul {
       margin: 20px;
+      position: relative;
+      list-style-type: none;
+
+      top: -15px;
+      left: 10px;
+  }
+
+  .container ul li {
+      background-color: #FB8500;
+      border-radius: 8px;
+
+      padding: 20px;
+      margin: auto;
+      margin-bottom: 5px;
+  
+      list-style-position: inside;
+
   }
 
 
