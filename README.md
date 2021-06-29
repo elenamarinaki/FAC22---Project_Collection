@@ -9,3 +9,4 @@
 * Semantic HTML
 * JavaScript Drum Kit
 * A11y
+* CSS + JS Clock
