@@ -12,4 +12,4 @@ The array cannot be empty and cannot be mutated. Try to avoid using higher-order
 
 _expected result_ => `[1, 4, 9]`
 
-![Good Luck](https://gph.is/st/Y9rNZbw)
+![Good Luck](https://giphy.com/stickers/good-luck-svXPxNNF0FwaraioHn)
