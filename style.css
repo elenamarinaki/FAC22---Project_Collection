@@ -105,7 +105,7 @@ html {
     font-family: 'Comfortaa', cursive;
 
     margin-left: 80px;
-    margin-top: 16%;
+    margin-top: 14%;
 
   }
 
@@ -131,11 +131,11 @@ html {
   }
 
   .container ul {
-      margin: 20px;
+      margin: 16px;  
       position: relative;
       list-style-type: none;
 
-      top: -15px;
+      top: -18px;
       left: 10px;
   }
 
@@ -151,6 +151,13 @@ html {
 
   }
 
+  .stack-sm > * + * {
+    margin-top: -4rem;
+  }
+
+  .stack-md > * + * {
+    margin-top: 2rem;
+  }
 
   .ball {
     position: absolute;

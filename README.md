@@ -10,3 +10,6 @@
 * JavaScript Drum Kit
 * A11y
 * CSS + JS Clock
+
+## Week 2
+* CSS Layouts
