@@ -13,3 +13,5 @@
 
 ## Week 2
 * CSS Layouts
+* Update CSS Variable with JS
+* Array Cardio Day 1
