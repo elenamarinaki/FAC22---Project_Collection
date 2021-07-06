@@ -2,52 +2,65 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" href="./favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>FAC22 - Project Collection</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./favicon.ico">
+  <title>FAC22 - Project Collection</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <header>
-        <h1>FAC22 - Project Collection</h1>
-        <p>by <i>Elena Marinaki</i> </p>
-    </header>
+  <header>
+    <div class="stack-xl">
+      <div></div>
+      <div></div>
+    </div>
+  </header>
 
-    <section class="stack-sm">
+  <main class="center width-lg stack-xl">
+    <section>
+      <div class="row center width-md gap-xl">
+        <img class="avatar" width="150" height="150" src='rhuave_small.png' alt='Elena Marinaki avatar' />
         <div class="stack-md">
-            <h2>Week 1</h2>
-            <div class="container">
-                <ul>
-                    <li><a href="https://github.com/elenamarinaki/FAC22---Project_Collection/tree/master/week-one/semantic-html"
-                            target="_blank">Semantics HTML</a></li>
-                    <li><a href="https://github.com/elenamarinaki/FAC22---Project_Collection/tree/master/week-one/learn-a11y"
-                            target="_blank">A11y</a></li>
-                    <li><a href="https://elenamarinaki.github.io/JavaScript_Drum_Kit/" target="_blank">JavaScript Drum
-                            Kit</a></li>
-                    <li><a href="https://github.com/elenamarinaki/FAC22---Project_Collection/tree/master/week-one/clock"
-                            target="_black">CSS + JS Clock</a></li>
-                </ul>
-            </div>
+          <h1>FAC22 Project Collection</h1>
+          <p>A collection of projects I am working on with the cool people @<i>Founders & Coders</i> :) </p>
         </div>
-
-
-        <div class="stack-md">
-            <h2>Week 2</h2>
-            <div class="container">
-                <ul>
-                    <li><a href="https://github.com/elenamarinaki/FAC22---Project_Collection/tree/master/week-two" target="_blank">CSS Layouts</a></li>
-
-                </ul>
-            </div>
-        </div>
-
+      </div>
     </section>
 
-    <script src="script.js"></script>
+    <section class="stack-md">
+      <!-- <nav class="tabs">
+        </nav> -->
+      <ul class="grid column-lg">
+        <li>
+          <div class="stack-md project">
+            <a href="https://elenamarinaki.github.io/JavaScript_Drum_Kit/" target="_blank"><img src="images/drum_machine.png" alt="Drum machine with CSS and JavaScript" /></a>
+            <p>A simple Drum Machine application made with CSS & Javascript!</p>
+          </div>
+        </li>
+        <li>
+          <div class="stack-md project">
+            <a href="https://github.com/elenamarinaki/FAC22---Project_Collection/tree/master/week-one/clock" target="_blank"><img src="images/clock.png" alt="Clock with CSS and JavaScript" /></a>
+            <p>CSS & Javascript Clock</p>
+          </div>
+        </li>
+        <li>
+          <div class="stack-md project">
+            <a href="https://github.com/elenamarinaki/FAC22---Project_Collection/tree/master/week-one/learn-a11y" target="_blank"><img src="images/a11y.png" alt="Tracing accesibility issues - A11y" /></a>
+            <p>Tracing accesibility issues - Learning A11y</p>
+          </div>
+        </li>
+        <li>
+          <div class="stack-md project">
+            <a href="https://github.com/elenamarinaki/FAC22---Project_Collection/tree/master/week-two/update_css_variables_with_js" target="_blank"><img src="images/css_var.png" alt="Update CSS Variables with JS" /></a>
+            <p>Update CSS Variables with JS</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
 
+  <!-- <script src="script.js"></script> -->
 </body>
 
 </html>

@@ -15,3 +15,4 @@
 * CSS Layouts
 * Update CSS Variable with JS
 * Array Cardio Day 1
+* FAC22 Project Collection Page

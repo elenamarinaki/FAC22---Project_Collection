@@ -1,0 +1,166 @@
+/* COLOUR PALLETE
+
+#222831 - black_1
+#232931 - black_2
+#1f2329 - atom_black
+#181818 - youtube_black
+#202040 dark_blue
+
+#b02533 rhuave red
+#54d5d8 rhuave blue
+
+#fda403 yellow
+#e8751a orange
+#c51350 fuksia
+#8a1253 blueberry 
+
+#F8961E yellow orange     ----- #f59d31 faded
+#F9C74F maize crayola
+#43AA8B zomp
+#90BE6D pistachio
+#277DA1 CG Blue
+#4D908E cadet blue
+
+
+#E9C46A orange yellow crayola
+#2A9D8F persian green
+#F4A261 sandy brown
+
+#EE9B00  gamboge
+#0A9396 veridian green
+#005F73 blue sapphire
+#94D2BD middle blue green
+#AE2012 rufous
+#9B2226 ruby red
+#CA6702 alloy orange
+#BB3E03 mahogany
+
+
+#FF9F1C orange peel
+#2EC4B6 tiffany blue
+
+#023047 prussian blue
+#FFB703 honney yellow
+#FB8500 orange
+#8ECAE6 light cornflower blue
+#219EBC blue green
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat&family=Varela+Round&display=swap');
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    background-color: #fca311;
+    color: #d0d0d0;
+    background-size: 100%;
+    margin: 0;
+    padding: 0;
+
+    font-size: 50px;
+    line-height: 1.5;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1 {
+    color: #023047;
+    font-family: 'Comfortaa', cursive;
+    text-decoration: underline;
+
+    margin: auto;
+    margin-top: 17%;
+    /* padding-top: 120px; */
+    /* font-family: 'Varela Round', sans-serif; */
+    /* font-family: 'Montserrat', sans-serif; */
+  }
+
+  p {
+    color: #FB8500;
+    margin-left: 880px;
+    margin-top: 0%;
+    /* padding-top: 20px; */
+
+    font-family: 'Comfortaa', cursive;
+    font-size: 38px;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  h2 {
+    color: #023047;
+    font-family: 'Comfortaa', cursive;
+
+    margin-left: 80px;
+    margin-top: 14%;
+
+  }
+
+  a {
+      text-decoration: none;
+      color: #023047;
+      font-family: 'Montserrat', sans-serif;
+  }
+
+  a:visited {
+    text-decoration: none;
+    color: #023047;
+}
+
+  .container {
+      width: 80%;
+      margin: auto;
+      margin-top: 10px;
+
+      color: #023047;
+      font-family: 'Montserrat', sans-serif;
+
+  }
+
+  .container ul {
+      margin: 16px;  
+      position: relative;
+      list-style-type: none;
+
+      top: -18px;
+      left: 10px;
+  }
+
+  .container ul li {
+      background-color: #FB8500;
+      border-radius: 8px;
+
+      padding: 20px;
+      margin: auto;
+      margin-bottom: 5px;
+  
+      list-style-position: inside;
+
+  }
+
+  .stack-sm > * + * {
+    margin-top: -4rem;
+  }
+
+  .stack-md > * + * {
+    margin-top: 2rem;
+  }
+
+  .ball {
+    position: absolute;
+    border-radius: 100%;
+    opacity: 0.7;
+  }
