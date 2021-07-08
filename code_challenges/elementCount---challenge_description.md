@@ -11,4 +11,4 @@ Write a function that accepts two arguments: an array and an element. Find how m
 
 _expected result_ => `2`
 
-![Good Luck](https://gph.is/st/Y9rNZbw)
+![Good Luck](https://gph.is/g/Zx1gQNq)
