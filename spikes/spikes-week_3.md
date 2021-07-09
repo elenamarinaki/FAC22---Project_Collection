@@ -136,7 +136,7 @@ _Source:_ [CSS Guidelines](https://cssguidelin.es/)
 
 ## Composition
 
-__Composition over Inheritance Principle__ 
+__*Composition over Inheritance Principle*__ 
 
 By combining simple independent parts, we gain more flexibility and efficiency, than connecting everything through inheritance to a common origin.
 
@@ -148,7 +148,7 @@ The term "primitive" refers to something that has its own meaning or purpose, in
 A primitive data type (eg Boolean) has very little meaning by itself. It provides no context whatsoever about a JavaScript application is found into.
 On the other hand, a data type that is __not__ primitive (eg Object), has its own meaning, since each one of those types has designated properties. That means that they provide context about the JavaScript application they are to be found into.
 
-### _Intrinsically Responsive_
+ _**Intrinsically Responsive**_
 
 `@media` queries breakpoints are considered "manual overrides" and primitives do not depend on them.
 
