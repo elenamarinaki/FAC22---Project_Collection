@@ -137,6 +137,7 @@ _Source:_ [CSS Guidelines](https://cssguidelin.es/)
 ## Composition
 
 __Composition over Inheritance Principle__ 
+
 By combining simple independent parts, we gain more flexibility and efficiency, than connecting everything through inheritance to a common origin.
 
 >The inheritance mindset encourages us to think about what finalized parts of UI should be called before we’ve even decided what they do, or what other, smaller parts can do for them. That’s where composition comes in.
