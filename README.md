@@ -17,3 +17,7 @@
 * Array Cardio Day 1
 * FAC22 Project Collection Page
 * BBC News Homepage
+
+## Week 3
+* CSS Architecture 
+* Responsive Design
