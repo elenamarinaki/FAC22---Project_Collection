@@ -58,3 +58,42 @@ We have so far discussed the problem of units focusing mainly on the fonts so fa
 The reason we start from the text first, is that it is a primitive web medium and thus designing a layout can be a derivative of our text's dimensions.
 Using relative values, we provide the browser with the flexibility to translate these values into pixels according to specific hardware as well as the user's configurations.
 
+
+
+--------------------------------------------------------
+--------------------------------------------------------
+
+
+## The Lengths of CSS
+
+Properties that take length as a value: 
+* width, height
+* margin, padding
+* border
+* box-shadow
+
+### The Absolute Lengths
+
+* px
+  * not literal screen pixels, it's an angular measurement
+  * supposed to be normalized across devices and displays
+
+* in
+  * in CSS, they map directly to pixels
+  * 1in == 96px
+
+* cm
+  * also map to pixels
+  * 1cm == 37.8px
+
+* mm
+  * 1mm == 0.1cm == 3.78px
+
+
+### The Font-Relative Lengths
+
+* em
+  * originally a typographic measurement
+  * 1em = 16px
+  * _if CSS changes the font size at any level in the document, **1em becomes whatever the new `font-size` is**_
+  * `em` units multiply upon themselves
