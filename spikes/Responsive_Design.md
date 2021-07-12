@@ -74,26 +74,31 @@ Properties that take length as a value:
 
 ### The Absolute Lengths
 
-* px
+* `px`
   * not literal screen pixels, it's an angular measurement
   * supposed to be normalized across devices and displays
 
-* in
+* `in`
   * in CSS, they map directly to pixels
   * 1in == 96px
 
-* cm
+* `cm`
   * also map to pixels
   * 1cm == 37.8px
 
-* mm
+* `mm`
   * 1mm == 0.1cm == 3.78px
 
 
 ### The Font-Relative Lengths
 
-* em
+* `em`
   * originally a typographic measurement
   * 1em = 16px
   * _if CSS changes the font size at any level in the document, **1em becomes whatever the new `font-size` is**_
   * `em` units multiply upon themselves
+  * do not change when change the `font-family`???
+
+* `rem`
+  * relative unit, like `em`
+  * always relative to the "root" element
