@@ -51,7 +51,6 @@ The `em` unit is relative to the `rem` unit. For example, if we need to use `<st
 
 _Source:_ [Units - Every Layout](https://every-layout.dev/rudiments/units/)
 
-![Lines](https://media.giphy.com/media/cNTobeyDPsv9xUeAOR/giphy.gif){width=70%}
 
 --------------------------------------------------------
 --------------------------------------------------------
@@ -114,10 +113,37 @@ Properties that take length as a value:
   * not technically a length unit
   * based on the length of the same property of the parent
 
+_Source:_ [The Lengths of CSS](https://css-tricks.com/the-lengths-of-css/)
+
 
 --------------------------------------------------------
 --------------------------------------------------------
 
+## How To Write Mobile-first CSS
+
+### Mobile-first approach
+
+* styles are applied first to mobile devices
+* styles for larger screens are then added via `@media` queries
+* this approach uses `min-width` media queries
+
+e.g. => `.content` sidebar takes 100% width on mobile and %66 on desktop.
+* a `<div>` has a width of 100% by default 
+
+
+
+
+
+
+--------------------------------------------------------
+--------------------------------------------------------
+
+
+
+
+
+
+![Lines](https://media.giphy.com/media/cNTobeyDPsv9xUeAOR/giphy.gif){width=70%}
 
 
 
@@ -129,3 +155,23 @@ Using relative values, we provide the browser with the flexibility to translate 
 ## When should you use a media query? Are they only for screen size?
 `@media` queries represent the hard coding of layout reconfigurations and are not sensitive to the immediate available space actually afforded the element or component in question. Scaling at a specific _breakpoint_ is quite arbitrary.
 So, using them depends upon the units chosen to represent basic elements, such as text. **If we adopt for example a `px` approach, it would make sense to use `@media` queries. The lack of relative and proportional sizing in this case would require adjusting individual elements case-by-case.**
+
+## How can mobile-first CSS make responsive styling easier?
+
+Code for larger screens is usually more complicated, so coding mobile-first simplifies the code.
+On the contrary, if we go desktop-first, we will have to _restore_ the default properties for smaller viewports most of the time.
+
+``` css
+.content {
+  // Properties for larger screens.
+  float: left;
+  width: 60%;
+
+  // Properties for smaller screens.
+  // Note that we have to write two default properties to make the layout work
+  @media (max-width: 800px) {
+    float: none;
+    width: 100%;
+  }
+}
+``` 
