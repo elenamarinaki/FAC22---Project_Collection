@@ -130,7 +130,7 @@ _Source:_ [The Lengths of CSS](https://css-tricks.com/the-lengths-of-css/)
 e.g. => `.content` sidebar takes 100% width on mobile and %66 on desktop.
 * a `<div>` has a width of 100% by default 
 
-
+_Source:_ [How To Write Mobile-first CSS](https://zellwk.com/blog/how-to-write-mobile-first-css/)
 
 
 
