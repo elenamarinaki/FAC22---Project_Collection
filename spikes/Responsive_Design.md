@@ -101,4 +101,4 @@ Properties that take length as a value:
 
 * `rem`
   * relative unit, like `em`
-  * always relative to the "root" element
+  * always relative to the "root" elemenť
