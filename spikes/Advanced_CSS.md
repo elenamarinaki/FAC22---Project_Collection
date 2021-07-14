@@ -26,3 +26,21 @@
 * Adjacent sibling combinator: `+` => `h2 + p` matches all `<p>` elements that **_directly_** follow an `<h2>` (both share the same parent)
 * Column combinator: `||` => selects nodes which belong to a column, e.g. `col || td` will match all `<td>` elements that belong to the scope of the `<col>`.
  
+### Pseudo
+
+* Pseudo classes: the `:` pseudo allow the _selection of elements_ based on state information that is _not contained_ in the document tree => `a:visited` matches all `<a>` elements that have been visited by the user
+* Pseudo elements: the `::` pseudo represent entities that are not included in HTML => `p::first-line` matches the first line of all `<p>` elements
+
+>**! In contrast to `pseudo-elements`, `pseudo-classes` can be used to style an element based on its _state_.**
+
+_Source:_ [CSS selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)
+
+
+--------------------------------------------------------
+--------------------------------------------------------
+
+## What are “combinator” selectors? Can you provide examples where they’re useful?
+CSS combinators are explaining the **relationship** between two selectors. CSS selectors are the patterns used to select elements for style purpose. They can be either simple or complex when they are combined together.
+
+## What are pseudo-elements? Can you provide examples where they’re useful?
+They represent entities that are not included on HTML.
