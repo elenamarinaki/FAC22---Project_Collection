@@ -21,4 +21,8 @@
 ### Combinators
 
 * Descendant combinator:   `  `(space) => `div span` matches **all** `<span>` elements that are inside a `<div>`
-* Child combinator: `>` => `ul > li` matches all `<li>` elements nested directly inside a `<ul>` element.
+* Child combinator: `>` => `ul > li` matches all `<li>` elements **_nested directly_** inside a `<ul>` element (directly children)
+* General sibling combinator: `~` => `p ~ span` matches all `<span>` elements that follow `<p>`, immediately or not (both share the same parent)
+* Adjacent sibling combinator: `+` => `h2 + p` matches all `<p>` elements that **_directly_** follow an `<h2>` (both share the same parent)
+* Column combinator: `||` => selects nodes which belong to a column, e.g. `col || td` will match all `<td>` elements that belong to the scope of the `<col>`.
+ 
