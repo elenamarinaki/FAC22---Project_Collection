@@ -43,4 +43,39 @@ _Source:_ [CSS selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_S
 CSS combinators are explaining the **relationship** between two selectors. CSS selectors are the patterns used to select elements for style purpose. They can be either simple or complex when they are combined together.
 
 ## What are pseudo-elements? Can you provide examples where they’re useful?
-They represent entities that are not included on HTML.
+They represent entities that are not included on HTML. For every element on the page, you get two more free ones that you can do just about anything another HTML element could do. They unlock a whole lot of interesting design possibilities without negatively affecting the semantics of your markup.
+* Multiple background canvases
+* Shapes with a single element
+* Show URL's links in printed web pages
+* Clear floats
+* Simulate `float: center;`
+* Label blocks of code with the language it is in
+```html
+<pre rel="CSS"></pre>
+```
+```css
+pre:after {
+  content: attr(rel);
+  position: absolute;
+  top: 22px;
+  right: 12px;
+}
+```
+*
+*
+*
+
+_Source:_ [A Whole Bunch of Amazing Stuff Pseudo Elements Can Do](https://css-tricks.com/pseudo-element-roundup/)
+
+## How might you create custom-styled checkboxes using both of the above?
+[Under-Engineered Custom Radio Buttons and Checkboxen](https://adrianroselli.com/2017/05/under-engineered-custom-radio-buttons-and-checkboxen.html)
+
+
+--------------------------------------------------------
+--------------------------------------------------------
+
+
+# Useful Articles
+
+* [Multiple Backgrounds and Borders with CSS 2.1](http://nicolasgallagher.com/multiple-backgrounds-and-borders-with-css2/)
+* [The Shapes of CSS](https://css-tricks.com/the-shapes-of-css/)
