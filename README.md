@@ -21,3 +21,4 @@
 ## Week 3
 * CSS Architecture 
 * Responsive Design
+* Advanced CSS
