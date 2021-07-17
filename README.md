@@ -11,14 +11,18 @@
 * A11y
 * CSS + JS Clock
 
-## Week 2
+## Week 3
 * CSS Layouts
 * Update CSS Variable with JS
 * Array Cardio Day 1
 * FAC22 Project Collection Page
 * BBC News Homepage
 
-## Week 3
+## Week 4
 * CSS Architecture 
 * Responsive Design
 * Advanced CSS
+
+## Week 5
+* Neumorphic Clock 
+    * `CSS + JS Clock` from Week 1 with updated CSS
