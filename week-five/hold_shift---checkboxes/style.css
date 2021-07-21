@@ -1,6 +1,13 @@
 html {
   font-family: sans-serif;
-  background: #7a1a6f;
+  /* background: #7a1a6f; */
+  background: repeating-linear-gradient(
+  45deg,
+  #606dbc,
+  #606dbc 10px,
+  #7a1a6f 10px,
+  #7a1a6f 30px
+);
 }
 
 .inbox {
