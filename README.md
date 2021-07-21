@@ -27,3 +27,4 @@
 * Neumorphic Clock 
     * `CSS + JS Clock` from Week 1 with updated CSS
 * Working on an Agency Website -> `MEA Robotics`
+* Hold Shift to check multiple Checkboxes
