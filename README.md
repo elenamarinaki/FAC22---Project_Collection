@@ -28,3 +28,8 @@
     * `CSS + JS Clock` from Week 1 with updated CSS
 * Working on an Agency Website -> `MEA Robotics`
 * Hold Shift to check multiple Checkboxes
+
+## Week 6
+* `MEA Robotics` -> second week
+    * added a `Members Area` for new users who want to join the agency
+    * form implementation and input validation
