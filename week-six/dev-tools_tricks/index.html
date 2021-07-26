@@ -16,32 +16,69 @@
       function makeGreen() {
         const p = document.querySelector('p');
         p.style.color = '#BADA55';
-        p.style.fontSize = '50px';
+        p.style.fontSize = '40px';
       }
 
       // Regular
-
+      console.log('hello');
       // Interpolated
-
+      console.log('hello, i*m a %s string!', '💩');
       // Styled
+      console.log(
+        '%c I am some great text',
+        'font-size:30px; background: pink; color: darkblue; text-shadow: 10px 10px 0 brown;'
+      );
 
       // warning!
+      console.warn('oh nooooo!');
 
       // Error :|
+      console.error('oh shit!!');
 
       // Info
+      console.info('i*m with stupid!');
 
       // Testing
+      console.assert(1 === 1, 'that is wrong!');
+
+      const p = document.querySelector('p');
+      p.accessKey = 'p';
+      console.assert(
+        p.classList.contains('shit'),
+        'this class does not exist!'
+      );
 
       // clearing
+      //   console.clear();
 
       // Viewing DOM Elements
+      console.log(p);
+      console.dir(p);
+
+      console.clear();
 
       // Grouping together
+      dogs.forEach((dog) => {
+        console.group(`${dog.name}`);
+        console.log(`this is ${dog.name}`);
+        console.groupEnd(`${dog.name}`);
+      });
 
       // counting
+      console.count('shit');
+      console.count('shit');
+      console.count('shit');
 
       // timing
+      console.time('fetching data');
+      fetch('https://api.github.com/users/elenamarinaki')
+        .then((data) => data.json())
+        .then((data) => {
+          console.timeEnd('fetching data');
+          console.log(data);
+        });
+
+      console.table(dogs);
     </script>
   </body>
 </html>
