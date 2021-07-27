@@ -34,3 +34,4 @@
     * added a `Members Area` for new users who want to join the agency
     * form implementation and input validation
 * Dev Tools Console Tricks
+* Object & Arrays: Reference VS Copy
