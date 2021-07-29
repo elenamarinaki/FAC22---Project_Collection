@@ -35,3 +35,6 @@
     * form implementation and input validation
 * Dev Tools Console Tricks
 * Object & Arrays: Reference VS Copy
+
+## Week 7
+* Started working on personal CV
