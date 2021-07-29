@@ -45,6 +45,26 @@ _expected result_ => `[false, true, true, false]`
 
 ## Description 3
 
+Implement a general-purpose `setDifference` function that returns the difference of two sets. Remember that "set difference" means "all items that are in the first set, but aren't in the second set."
+
+
+**Example:**
+------------------------------------------
+```javascript
+const difference = setDifference(
+  new Set([1, 2, 3]),
+  new Set([2, 3, 4])
+);
+[
+  difference.has(1),
+  difference.has(2),
+  difference.has(3),
+  difference.has(4)
+];
+```
+
+_expected result_ => `[true, false, false, false]`
+
 
 
 ![Good Luck](https://media.giphy.com/media/L3uegwiKeAY6GG1UmI/giphy.gif)
