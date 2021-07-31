@@ -25,6 +25,13 @@
       request
         .then((response) => response.json())
         .then((data) => console.log(data));
+
+      // -------------- STEP 4
+      // handling errors
+      fetch()
+        .then((response) => response.json())
+        .then((pikachu) => console.log(pikachu))
+        .catch((error) => console.log(error));
     </script>
   </body>
 </html>
