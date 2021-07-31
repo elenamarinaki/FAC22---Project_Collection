@@ -60,9 +60,15 @@
         fetch(user.repos_url).then((response) => response.json());
 
       getUser2('elenamarinaki')
-        .then(getRepos)
+        .then(getRepos) //.then((user) => getRepos(user))
         .then((repos) => console.log(repos))
         .catch((error) => console.log(error));
+
+      // -------------- MULTIPLE PROMISES
+      const promise1 = getUser2('elenamarinaki');
+      const promise2 = getUser2('novinfard');
+
+      Promise.all([promise1, promise2]).then((values) => console.log(values));
     </script>
   </body>
 </html>
