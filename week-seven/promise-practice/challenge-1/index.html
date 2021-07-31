@@ -17,11 +17,22 @@
       }
 
       // example usage of wait (feel free to delete):
-      wait(2000).then(() => {
-        console.log("this callback ran after 2000ms");
-      });
+      // wait(2000).then(() => {
+      //   console.log('this callback ran after 2000ms');
+      // });
 
       // write your code here
+      function light(colour) {
+        return wait(1000).then(() => console.log(colour));
+      }
+
+      light('green')
+        .then(() => light('amber'))
+        .then(() => light('red'))
+        .then(() => light('amber'))
+        .then(() => light('red'))
+        .then(() => light('green'))
+        .then(() => light('finished'));
     </script>
   </body>
 </html>
