@@ -10,6 +10,12 @@
     <script>
       const request = fetch('https://pokeapi.co/api/v2/pokemon/pikachu');
       console.log(request);
+      // request.then((result) => console.log(result));
+
+      // the PokéAPI return JSON-formatted data, so we can use the response.json() method to access it :)
+      request.then((response) => {
+        response.json().then((data) => console.log(data));
+      });
     </script>
   </body>
 </html>
