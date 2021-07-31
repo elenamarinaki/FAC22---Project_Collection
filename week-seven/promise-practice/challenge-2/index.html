@@ -9,6 +9,16 @@
     <h1>Open the console</h1>
     <script>
       // write your code here
+      const initRequest = fetch('https://pokeapi.co/api/v2/pokemon/pikachu');
+
+      initRequest
+        .then((response) => response.json())
+        // .then((pokemon) => console.log(pokemon.species.url))
+        .then((pokemon) => fetch(pokemon.species.url))
+        .then((response) => response.json())
+        .then((pokemon) => fetch(pokemon.shape.url))
+        .then((response) => response.json())
+        .then(console.log);
     </script>
   </body>
 </html>
