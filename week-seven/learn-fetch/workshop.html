@@ -8,10 +8,10 @@
   <body>
     <h1>Open the console</h1>
     <script>
-      const request = fetch('https://pokeapi.co/api/v2/pokemon/pikachu');
+      // const request = fetch('https://pokeapi.co/api/v2/pokemon/pikachu');
 
       // -------------- STEP 1
-      console.log(request);
+      // console.log(request);
       // request.then((result) => console.log(result));
 
       // -------------- STEP 2
@@ -22,15 +22,38 @@
 
       // -------------- STEP 3
       // chaining THENs
-      request
-        .then((response) => response.json())
-        .then((data) => console.log(data));
+      // request
+      //   .then((response) => response.json())
+      //   .then((data) => console.log(data));
 
       // -------------- STEP 4
       // handling errors
-      fetch()
-        .then((response) => response.json())
-        .then((pikachu) => console.log(pikachu))
+      // fetch()
+      //   .then((response) => response.json())
+      //   .then((pikachu) => console.log(pikachu))
+      //   .catch((error) => console.log(error));
+
+      // --------------- fetching user from GitHub API
+      // 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 => token
+      function getUser(user) {
+        if (user) {
+          fetch(`https://api.github.com/users/${user}`).then((response) =>
+            response.json()
+          );
+        } else {
+          console.log('User not provided!');
+        }
+      }
+      //getUser does not work for some reason ...
+
+      const getUser2 = (username) =>
+        fetch(`https://api.github.com/users/${username}`).then((response) =>
+          response.json()
+        );
+      
+
+      getUser2('elenamarinaki')
+        .then((user) => console.log(user))
         .catch((error) => console.log(error));
     </script>
   </body>
