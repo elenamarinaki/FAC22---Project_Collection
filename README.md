@@ -40,3 +40,4 @@
 * Started working on personal CV
 * Callbacks, Async Workshop
 * `Fetch()` 
+* Promise practice
