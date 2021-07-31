@@ -38,3 +38,5 @@
 
 ## Week 7
 * Started working on personal CV
+* Callbacks, Async Workshop
+* `Fetch()` 
