@@ -41,3 +41,5 @@
 * Callbacks, Async Workshop
 * `Fetch()` 
 * Promise practice
+* Learning `Figma`
+    * designing an Covid API app
