@@ -42,4 +42,8 @@
 * `Fetch()` 
 * Promise practice
 * Learning `Figma`
-    * designing an Covid API app
+    * designing a Covid API app
+
+## Week 8
+* HTML Forms
+* Real world `Fetch`
