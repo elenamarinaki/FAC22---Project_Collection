@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real world fetch</title>
+  </head>
+  <body>
+    <form>
+      <label for="search">Pokemon name:</label>
+      <input type="text" id="search" name="search" />
+
+      <button type="submit">Search</button>
+    </form>
+    <script>
+      const form = document.querySelector('form');
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData);
+
+        fetch(`https://pokeapi.co/api/v2/pokemon/${data.search}`)
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error('something went wrong!');
+            }
+            return response.json();
+          })
+          .then((parsed) => console.log(parsed))
+          .catch(console.error);
+      });
+    </script>
+  </body>
+</html>
