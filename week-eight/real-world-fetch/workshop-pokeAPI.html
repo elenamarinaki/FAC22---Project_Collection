@@ -11,15 +11,20 @@
       <input type="text" id="search" name="search" />
 
       <button type="submit">Search</button>
+
+      <output></output>
     </form>
     <script>
       const form = document.querySelector('form');
+      const output = document.querySelector('output');
 
       form.addEventListener('submit', (e) => {
         e.preventDefault();
 
         const formData = new FormData(form);
         const data = Object.fromEntries(formData);
+
+        // output.innerHTML = '';
 
         fetch(`https://pokeapi.co/api/v2/pokemon/${data.search}`)
           .then((response) => {
@@ -28,7 +33,15 @@
             }
             return response.json();
           })
-          .then((parsed) => console.log(parsed))
+          .then((pokemon) => {
+            const title = document.createElement('h3');
+            const img = document.createElement('img');
+
+            title.textContent = pokemon.name;
+            img.src = pokemon.sprites.front_default;
+
+            output.append(title, img);
+          })
           .catch(console.error);
       });
     </script>
