@@ -12,16 +12,29 @@
       //   .then((data) => console.log(data))
       //   .catch((error) => console.log(error));
 
-      fetch('https://echo.oliverjam.workers.dev/status/404')
+      // fetch('https://echo.oliverjam.workers.dev/status/404')
+      //   .then((response) => {
+      //     if (!response.ok) {
+      //       throw new Error(response.status);
+      //     }
+      //     console.log(response);
+      //   })
+      //   .catch((error) => console.log(error));
+
+      // --------------------- Submitting data
+      fetch('https://echo.oliverjam.workers.dev/json', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ name: 'Elena' }),
+      })
         .then((response) => {
           if (!response.ok) {
             throw new Error(response.status);
           }
-          console.log(response);
+          return response.json();
         })
+        .then((parsed) => console.log(parsed))
         .catch((error) => console.log(error));
-
-        // --------------------- Submitting data
     </script>
   </body>
 </html>
