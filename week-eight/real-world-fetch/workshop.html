@@ -6,6 +6,15 @@
     <title>Real world fetch</title>
   </head>
   <body>
+    <form action="">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" />
+
+      <label for="tel">Tel:</label>
+      <input type="text" id="tel" name="tel" />
+
+      <button type="submit">Submit</button>
+    </form>
     <script>
       // --------------------- HTTP Errors
       // fetch('https://echo.oliverjam.workers.dev/status/404')
@@ -22,19 +31,41 @@
       //   .catch((error) => console.log(error));
 
       // --------------------- Submitting data
-      fetch('https://echo.oliverjam.workers.dev/json', {
-        method: 'POST',
-        headers: { 'content-type': 'application/json' },
-        body: JSON.stringify({ name: 'Elena' }),
-      })
-        .then((response) => {
-          if (!response.ok) {
-            throw new Error(response.status);
-          }
-          return response.json();
+      // fetch('https://echo.oliverjam.workers.dev/json', {
+      //   method: 'POST',
+      //   headers: { 'content-type': 'application/json' },
+      //   body: JSON.stringify({ name: 'Elena' }),
+      // })
+      //   .then((response) => {
+      //     if (!response.ok) {
+      //       throw new Error(response.status);
+      //     }
+      //     return response.json();
+      //   })
+      //   .then((parsed) => console.log(parsed))
+      //   .catch((error) => console.log(error));
+
+      // --------------------- User Input
+      const form = document.querySelector('form');
+      const name = document.querySelector('#name');
+      const tel = document.querySelector('#tel');
+
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        fetch('https://echo.oliverjam.workers.dev/json', {
+          method: 'POST',
+          headers: { 'content-type': 'application/json' },
+          body: JSON.stringify({ nameId: name.value, telId: tel.value }),
         })
-        .then((parsed) => console.log(parsed))
-        .catch((error) => console.log(error));
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error(response.status);
+            }
+            return response.json();
+          })
+          .then((parsed) => console.log(parsed))
+          .then((error) => console.log(error));
+      });
     </script>
   </body>
 </html>
