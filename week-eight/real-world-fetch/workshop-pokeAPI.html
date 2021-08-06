@@ -33,12 +33,14 @@
             }
             return response.json();
           })
+          // .then(console.log)
           .then((pokemon) => {
             const title = document.createElement('h3');
             const img = document.createElement('img');
 
             title.textContent = pokemon.name;
             img.src = pokemon.sprites.front_default;
+            // img.src = pokemon.sprites.back_shiny;
 
             output.append(title, img);
           })
