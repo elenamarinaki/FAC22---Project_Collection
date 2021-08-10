@@ -47,3 +47,4 @@
 ## Week 8
 * HTML Forms
 * Real world `Fetch`
+* Building a searching app using the Guardian API
