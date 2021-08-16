@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn Testing</title>
+  </head>
+  <body>
+    <h1>Open the console</h1>
+
+    <script>
+      // the function we're testing
+      function square(x) {
+        return x * x;
+      }
+      const result = square(2);
+      const expected = 987;
+      if (result !== expected) {
+        console.error(`Should be equal to 4, but got ${expected} instead!`);
+      }
+
+      //equal
+      function equal(actual, expected) {
+        if (actual === expected) {
+          console.info(`Pass: expected = actual = ${expected}`);
+        } else {
+          console.error(`Fail: expected ${expected}, but got ${actual}`);
+        }
+      }
+
+      const result1 = square(3);
+      const expected1 = 9;
+      equal(result1, expected1);
+
+      const result2 = square(3.5);
+      const expected2 = 99;
+      equal(result2, expected2);
+    </script>
+  </body>
+</html>
