@@ -65,6 +65,27 @@
         const expected = 56;
         equal(result, expected);
       });
+
+      // CUSTOM MESSAGES
+      function equal(actual, expected, message) {
+        if (actual === expected) {
+          const defaultMessage = `expected ${expected} and received ${actual}`;
+          console.info(`Pass: ${message || defaultMessage}`);
+        } else {
+          const defaultMessage = `expected ${expected}, but got ${actual} instead!`;
+          console.error(`Fail: ${message || defaultMessage}`);
+        }
+      }
+      test('Correctly squares integers', () => {
+        const result = square(2);
+        const expected = 4;
+        equal(result, expected, 'square(2) should return 4');
+      });
+      test('Correctly squares integers', () => {
+        const result = square(3);
+        const expected = 46;
+        equal(result, expected, 'square(2) should return 4');
+      });
     </script>
   </body>
 </html>
