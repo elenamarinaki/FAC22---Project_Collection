@@ -35,6 +35,19 @@
       const result2 = square(3.5);
       const expected2 = 99;
       equal(result2, expected2);
+
+      // not equal
+      function notEqual(actual, expected) {
+        if (actual !== expected) {
+          console.info(`Pass: ${expected} is different to ${actual}`);
+        } else {
+          console.error(`Fail: ${expected} is equal to ${actual}`);
+        }
+      }
+
+      const result3 = square(4);
+      const expected3 = 17;
+      notEqual(result3, expected3);
     </script>
   </body>
 </html>
