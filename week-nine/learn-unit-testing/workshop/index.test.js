@@ -16,3 +16,14 @@ test('form-encoded string should return an object', () => {
     email: 'hello@oliverjam.es',
   });
 });
+
+//solution
+test('form-encoded string should return an object', () => {
+  const actual = searchParamsToObject('name=oliver&email=hello@oliverjam.es');
+  const expected = {
+    name: 'oliver',
+    email: 'hello@oliverjam.es',
+  };
+  equal(actual.name, expected.name);
+  equal(actual.email, expected.email);
+});
