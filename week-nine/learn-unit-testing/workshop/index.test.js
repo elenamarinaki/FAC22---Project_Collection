@@ -4,6 +4,7 @@ test('makeURL should return the correct pokemon ULR', () => {
   equal(makeUrl('eevwee'), 'https://pokeapi.co/api/v2/eevee');
 });
 
+//name with all caps, won't work
 test('makeUrl should return an error', () => {
   notEqual(makeUrl('eevee'), 'https://pokeapi.co/api/v2/eevee');
   notEqual(makeUrl('eeveeeee'), 'https://pokeapi.co/api/v2/eevee');
