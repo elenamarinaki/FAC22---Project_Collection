@@ -8,3 +8,11 @@ test('makeUrl should return an error', () => {
   notEqual(makeUrl('eevee'), 'https://pokeapi.co/api/v2/eevee');
   notEqual(makeUrl('eeveeeee'), 'https://pokeapi.co/api/v2/eevee');
 });
+
+//this doesn't work like this... we have to check each property separately
+test('form-encoded string should return an object', () => {
+  equal(searchParamsToObject('name=oliver&email=hello@oliverjam.es'), {
+    name: 'oliver',
+    email: 'hello@oliverjam.es',
+  });
+});
