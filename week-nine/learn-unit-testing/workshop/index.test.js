@@ -27,3 +27,11 @@ test('form-encoded string should return an object', () => {
   equal(actual.name, expected.name);
   equal(actual.email, expected.email);
 });
+
+// leap year testing
+test('testing the isLeapYear function with various inputs', () => {
+  equal(isLeapYear(2020), true);
+  equal(isLeapYear('sdajshgasd'), `Please enter a number`);
+  equal(isLeapYear(1963), false);
+  equal(isLeapYear(-347), `Year cannot be a negative number`);
+});
