@@ -33,9 +33,11 @@ const fs = require('fs');
 const folderName = process.argv[2] || 'Project';
 try {
   fs.mkdirSync(folderName);
-  fs.writeFileSync(`${folderName}/index.html`);
-  fs.writeFileSync(`${folderName}/style.css`);
-  fs.writeFileSync(`${folderName}/script.js`);
+
+//   the fs.writeFileSync needs 2nd argument!!!
+  fs.writeFileSync(`${folderName}/index.html`, 'html');
+  fs.writeFileSync(`${folderName}/style.css`, 'css');
+  fs.writeFileSync(`${folderName}/script.js`, 'js');
 } catch (e) {
   console.log('something went wrong');
   console.log(e);
