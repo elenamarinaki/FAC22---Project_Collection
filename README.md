@@ -56,7 +56,10 @@ _In this repository I will be adding new material I am learning every week with 
 - Building a searching app using the Guardian API
 - Learning about `JavaScript Debugging`, `Event Loop` and `Inspecting Network Activity`
 
-
 ## Week 9
 
 - Learning testing in JavaScript
+
+## Week 10
+
+- Spikes on Static, Unit, Integration and E2E Testing
