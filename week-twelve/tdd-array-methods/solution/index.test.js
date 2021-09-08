@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 // testing map()
 
 test("map() should return an array with the same number of elements", () => {
